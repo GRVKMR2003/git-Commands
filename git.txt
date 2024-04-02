@@ -1,0 +1,49 @@
+---------------------------------------------------------------------------------------------------------------------------------
+to get to kanow who is commiting ,  each user should have its own config
+
+git config --global user.name "Grv"
+git config --global user.email "gk9596355299@gmail.com"
+
+to check --->  git  config --global --list
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+git sttaus                     --->checks sttaus
+git init                       --->create a local repository        
+        |
+    indtead of geting master , we will use main
+ git init -b main
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+How to add files                      --->  git add first.txt
+if we want all past commits           --->  git log
+how to commit with meassage           ---> git commit -m "this is my first commit"
+to directly commit and not staging(add)--> git commit -a -m "this is my first commit"
+to get changes                        ---> git diff --staged
+to commit all files directly          ---> git add .
+to ramove file from directory or git  ---> git rm --cached xyz.txt
+
+------------------------------------------------------------------------------------------------------------------------------------------
+to push local repo to remote repo or in github --->  git push origin main
+
+
+------------------------------------------------------------------------------------------------------------------------------------------Tagging on github  ---> git tag -a v1.0 -m "First release"
+to know about the tag  ---> git show v1.0
+
+--------------------------------------------------------------------------------------------------------------------------------------
+to get a new branch ---> git checkout -b feature1   or    git switch -c feature1
+
+to check which braanch u are in ---> git branch(for local)   or git branch --all (for remote)
+
+to swtch to main brwnach  ---> git switch main
+to swtch to prev brwnach  ---> git switch -
+
+to delete the branch ---> git branch -d feature2
+
+
+to push branches on remote repository  add - commit - git switch feature1 - git push origin feature1
+
+to merge feature branch to main branch    -  git switch main - git pull origin main  - git merge feature1 - git push origin main
+                                          
+
